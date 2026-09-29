@@ -79,7 +79,7 @@ Maintenant que vous avez les idées claires, il est temps de passer au déploiem
 
 Créez 2 nouvelles machines virtuelles permettant d'accueillir d'un côté le serveur web, de l'autre la machine d'administration.
 
->[NOTE]
+>[!NOTE]
 > Une machine virtuelle Linux n'a pas besoin de beaucoup de RAM pour fonctionner correctement - 1GB voir 512MB sont largement suffisants si vous vous contentez de la ligne de commande.
 
 Configurez ces machines afin que d'un côté, un serveur web de type apache (avec le module php) soit fonctionnel et de l'autre avoir une machine en capacité de recevoir des connexions SSH.
