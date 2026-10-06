@@ -1,6 +1,5 @@
 # TP2 - Firewall
 
-_Sébastien Mériot ([@smeriot](https://twitter.com/smeriot))_
 _Pierre Dubreuil_
 
 _Cet énoncé est très fortement inspiré d'un TP créé par François Lesueur ([énoncé original](https://github.com/flesueur/srs/blob/master/tp2-firewall.md)) et que nous avons co-animé à l'INSA
@@ -229,7 +228,7 @@ routeurs (sous-réseaux) et pare-feu (règles de filtrage).
 
 Implémentez votre matrice de flux sur la machine "target-router". Vous aurez besoin de procéder en deux étapes :
 
-* Segmenter le réseau "target" : (et je vous recommande très très fortement de prendre 10 minutes pour visionner cette [vidéo explicative](https://tube.ac-lyon.fr/videos/watch/c03fe09e-cef6-4f31-9bd1-0453d160eb85)
+* Segmenter le réseau "target" :
 	* Éditer `global.json` (dans le dossier `mi-lxc`) pour spécifier les interfaces sur le routeur, dans la section "target".
 	Il faut ajouter des bridges (dont le nom doit commencer par "target-") et découper l'espace 100.80.0.1/16. Enfin, il faut ajouter les interfaces
 	eth2, eth3... ainsi créées à la liste des `asdev` definie juste au-dessus (avec des ';' de séparation entre interfaces)
