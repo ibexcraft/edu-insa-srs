@@ -2,7 +2,7 @@
 
 _Pierre Dubreuil_
 
-_Cet énoncé est en partie inspiré d'un TP créé par François Lesueur ([énoncé original](https://github.com/flesueur/srs/blob/master/tp3-ids.md)) et que nous avons co-animé à l'INSA Lyon il y a quelques mois._
+_Cet énoncé est en partie inspiré d'un TP créé par François Lesueur ([énoncé original](https://github.com/flesueur/srs/blob/master/tp3-ids.md))._
 
 Durée: 4 heures
 
@@ -95,7 +95,7 @@ Par défaut, `squid` joue uniquement le rôle de proxy et permet notamment de me
 url_rewrite_program /usr/bin/squidGuard -c /etc/squidguard/squidGuard.conf
 ```
 
-Il faut également autoriser les IPs du réseau à se connecter car, par défaut, `squid` n'autorise que _localhost_. A la ligne 1408, modifiez la configuration pour ajouter une directive autorisant la sous-réseau de l'entreprise "target" à utiliser le proxy afin d'avoir quelque chose ressemblant à ceci:
+Il faut également autoriser les IPs du réseau à se connecter car, par défaut, `squid` n'autorise que _localhost_. A la ligne 1408, modifiez la configuration pour ajouter une directive autorisant le sous-réseau de l'entreprise "target" à utiliser le proxy afin d'avoir quelque chose ressemblant à ceci:
 ```
 acl allowed_ips src 100.80.0.0/16
 
